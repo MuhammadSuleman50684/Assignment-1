@@ -1,0 +1,9 @@
+import requests
+url = "https://api.example.com/v1/data"
+response = requests.get(url)
+if response.status_code == 200:
+    data = response.json()
+else:
+    print("Error fetching data from API:", response.status_code)
+
+print(data)
